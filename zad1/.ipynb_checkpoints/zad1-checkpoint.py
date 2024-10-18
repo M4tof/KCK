@@ -106,7 +106,7 @@ def main():
     GrafRight.yaxis.tick_right()
     GrafRight.yaxis.set_label_position("right")
     
-    plt.savefig('myplot.png')
+    plt.savefig('myplot.pdf')
     plt.close()
 
 if __name__ == '__main__':
