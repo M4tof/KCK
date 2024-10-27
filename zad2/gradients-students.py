@@ -37,7 +37,7 @@ def plot_color_gradients(gradients, names):
         y_text = pos[1] + pos[3]/2.
         fig.text(x_text, y_text, name, va='center', ha='left', fontsize=10)
 
-    fig.savefig('my-gradients.pdf')
+    fig.savefig('my-gradients.png')
 
 def hsv2rgb(h, s, v):
     return cs.hsv_to_rgb(h, s, v)
@@ -94,7 +94,7 @@ def gradient_rgb_wb_custom(v):
         return (1, 1 - 7*v, 0)
     
     else:
-        v -= 6/7
+        v -= 6.1/7
         return (1 - 7*v, 0, 0)
 
 def gradient_hsv_bw(v):
