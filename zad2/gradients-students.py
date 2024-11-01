@@ -37,7 +37,7 @@ def plot_color_gradients(gradients, names):
         y_text = pos[1] + pos[3]/2.
         fig.text(x_text, y_text, name, va='center', ha='left', fontsize=10)
 
-    fig.savefig('./my-gradients.png')
+    fig.savefig('./my-gradients.pdf')
 
 def hsv2rgb(h, s, v):
     return cs.hsv_to_rgb(h, s, v)
